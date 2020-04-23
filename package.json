@@ -1,5 +1,5 @@
 {
-  "name": "package-components",
+  "name": "comp-wrap",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tcheng8866/package-components.git"
+    "url": "git+https://github.com/tcheng8866/comp-wrap.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tcheng8866/package-components/issues"
+    "url": "https://github.com/tcheng8866/comp-wrap/issues"
   },
-  "homepage": "https://github.com/tcheng8866/package-components#readme",
+  "homepage": "https://github.com/tcheng8866/comp-wrap#readme",
   "devDependencies": {}
 }
