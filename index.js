@@ -1,4 +1,4 @@
-import wInput from './components/p-input/index.vue'
+import wInput from './components/w-input/index.vue'
 
 export {
   wInput
