@@ -20,7 +20,7 @@
 
 <script type="text/javascript">
 export default {
-  // name: 'wInput',
+  name: 'wInput',
   props: {
     label: {
       type: String,

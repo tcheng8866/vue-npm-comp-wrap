@@ -17,12 +17,12 @@
 </template>
 
 <script>
-import wInput from "../../packages/input/input.vue";
-import wButton from "../../packages/button/button.vue";
+// import wInput from "../../packages/input/input.vue";
+// import wButton from "../../packages/button/button.vue";
 export default {
   name: "",
   mixins: [],
-  components: { wInput, wButton },
+  // components: { wInput, wButton },
   props: {},
   data() {
     return {

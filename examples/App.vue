@@ -5,7 +5,8 @@
 </template>
 
 <script>
-import test from "@/views/test.vue";
+  //  代表的  src  已经被改成 examples
+import test from "./views/test.vue";
 export default {
   name: "App",
   components: { test }

@@ -10,7 +10,7 @@
 
 <script type="text/javascript">
 export default {
-  // name: 'wButton',
+  name: 'wButton',
   props: {
     disabled: {
       type: Boolean,
