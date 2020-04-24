@@ -1,8 +1,11 @@
-    node_modules/
-    vue.config.js
+    dist/
+	node_modules/
     babel.config.js
+	vue.config.js
+	.gitignore
+	package-lock.json
+	
     *.map
     *.html
-
     .idea
     .vscode
