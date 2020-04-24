@@ -1,14 +1,14 @@
 {
 	"name": "comp-wrap",
-	"version": "1.0.5",
-	"main": "lib/compWrap.umd.min.js",
+	"version": "1.0.6",
+	"main": "lib/comp-wrap.umd.min.js",
 	"private": false,
 	"scripts": {
 		"serve": "vue-cli-service serve",
 		"build": "vue-cli-service build",
 		"test:unit": "vue-cli-service test:unit",
 		"lint": "vue-cli-service lint",
-		"lib": "vue-cli-service build --target lib --name compWrap --dest lib packages/index.js"
+		"lib": "vue-cli-service build --target lib --name comp-wrap --dest lib packages/index.js"
 	},
 	"dependencies": {
 		"core-js": "^3.6.4",
