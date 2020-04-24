@@ -1,1 +1,0 @@
-export const wInput = require('./input/input.vue').default

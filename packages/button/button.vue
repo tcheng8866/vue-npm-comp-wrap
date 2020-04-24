@@ -1,0 +1,49 @@
+<template>
+  <button
+    type="button"
+    :class="[disabled ? disabledClass : '']"
+    @click="bindClick()"
+  >
+    <slot></slot>
+  </button>
+</template>
+
+<script type="text/javascript">
+export default {
+  // name: 'wButton',
+  props: {
+    disabled: {
+      type: Boolean,
+      default: false
+    }
+  },
+  data() {
+    return {
+      disabledClass: "disabled"
+    };
+  },
+  methods: {
+    bindClick() {
+      // 不存在时机问题： 默认可以点击、点击一次后禁止点击
+      if (this.disabled) return;
+      this.$emit("click");
+    }
+  }
+};
+</script>
+<style lang="less" scoped>
+button {
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+  background-image: linear-gradient(97deg, #32aef4 0%, #0084cf 81%);
+  border: none;
+  border-radius: 3px;
+}
+.disabled {
+  background: #cccccc;
+}
+</style>

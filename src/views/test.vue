@@ -3,26 +3,34 @@
     <div class="wrap">
       <!-- （tel实际上是一种text类型）手机端会唤醒数字键盘 -->
       <!-- （number 可以输入（-）、多个小数点、所以最好输入不控制、但提交时正则拦截、输入控制会有兼容性问题-->
-      <w-input :label="label" v-model.trim="modelTel" :maxlength="maxlength" :type="type" :placeholder="placeholder" :disabled="disabled"></w-input>
-      <button @click="bindClick()">测试</button>
+      <w-input
+        :label="label"
+        v-model.trim="modelTel"
+        :maxlength="maxlength"
+        :type="type"
+        :placeholder="placeholder"
+        :disabled="disabled"
+      ></w-input>
+      <w-button :disabled="disabled" @click="bindClick()">测试</w-button>
     </div>
   </div>
 </template>
 
 <script>
-import { wInput } from '@/components';
+import wInput from "../../packages/input/input.vue";
+import wButton from "../../packages/button/button.vue";
 export default {
-  name: '',
+  name: "",
   mixins: [],
-  components: { wInput },
+  components: { wInput, wButton },
   props: {},
   data() {
     return {
-      label: '电话号码：',
-      modelTel: '18702906728',
-      maxlength: 11,
-      type: 'tel',
-      placeholder: '',
+      label: "电话号码：",
+      modelTel: "18702906728",
+      maxlength: 1000,
+      type: "tel",
+      placeholder: "",
       disabled: false
     };
   },
@@ -33,7 +41,9 @@ export default {
   destroyed() {},
   methods: {
     bindClick() {
-      console.log(this.modelTel)
+      // 不存在时机问题： 默认可以点击、点击一次后禁止点击
+      console.log(this.modelTel);
+      this.disabled = true;
     }
   }
 };
@@ -54,6 +64,6 @@ export default {
   }
 }
 .labelClass {
-   fontSize: 30px
+  fontsize: 30px;
 }
 </style>

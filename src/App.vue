@@ -5,14 +5,17 @@
 </template>
 
 <script>
-import test  from '@/views/test.vue'
+import test from "@/views/test.vue";
 export default {
-  name: 'App',
-  components: {test}
-}
+  name: "App",
+  components: { test }
+};
 </script>
 
 <style lang="less">
+body {
+  margin: 0;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
