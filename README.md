@@ -1,5 +1,29 @@
-# "comp-wrap"简介
-封装常用的前端组件
-## 功能列表
-- w-input  label/input 组件 
+# comp-wrap
 
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Run your unit tests
+```
+npm run test:unit
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
