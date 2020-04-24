@@ -18,4 +18,4 @@ module.exports = {
   }
 }
 
-    // "lib": "vue-cli-service build --target lib --name comp-wrap --dest lib packages/index.js"  // 打包命令
+// "lib": "vue-cli-service build --target lib --name comp-wrap --dest lib packages/index.js"  // 打包命令

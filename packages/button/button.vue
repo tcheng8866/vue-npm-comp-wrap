@@ -35,7 +35,7 @@ export default {
 button {
   width: 100%;
   height: 40px;
-  margin-top: 20px;
+  margin-top: 20px;  // button默认是inline-block；竖直方向margin不会重叠
   font-size: 16px;
   text-align: center;
   color: #ffffff;
