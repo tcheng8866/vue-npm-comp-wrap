@@ -1,8 +1,11 @@
 {
 	"name": "comp-wrap",
 	"version": "1.0.6",
+	"description": "comp-wrap",
 	"main": "lib/comp-wrap.umd.min.js",
 	"private": false,
+	"license": "MIT",
+	"author": "tianchengcheng",
 	"scripts": {
 		"serve": "vue-cli-service serve",
 		"build": "vue-cli-service build",

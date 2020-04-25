@@ -5,12 +5,20 @@
       <!-- （number 可以输入（-）、多个小数点、所以最好输入不控制、但提交时正则拦截、输入控制会有兼容性问题-->
       <w-input
         :label="label"
-        v-model.trim="modelTel"
+        v-model.trim="modelName"
         :maxlength="maxlength"
         :type="type"
         :placeholder="placeholder"
         :disabled="disabled"
       ></w-input>
+<!--      <w-input
+        :label="label"
+        v-model.trim="modelTel"
+        :maxlength="maxlength"
+        :type="type"
+        :placeholder="placeholder"
+        :disabled="disabled"
+      ></w-input> -->
       <w-button :disabled="disabled" @click="bindClick()">测试</w-button>
     </div>
   </div>
@@ -27,6 +35,7 @@ export default {
   data() {
     return {
       label: "电话号码：",
+      modelName: '两行测一下',
       modelTel: "18702906728",
       maxlength: 1000,
       type: "tel",
