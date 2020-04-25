@@ -24,7 +24,7 @@ export default {
   props: {
     label: {
       type: String,
-      default: ""
+      require: true
     },
     value: {
       // 为什么这里要用 value 属性  看created

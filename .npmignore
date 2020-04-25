@@ -1,6 +1,7 @@
 dist/
 examples/
 node_modules/
+packages/
 public/
 tests/
 .browserslistrc
