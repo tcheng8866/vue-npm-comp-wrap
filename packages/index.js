@@ -1,5 +1,5 @@
-import wInput from './input/input.vue'
-import wButton from './button/button.vue'
+import wInput from './input/index'
+import wButton from './button/index'
 
 const components = [wInput, wButton]; // 将上述组件保存到一个数组
 
