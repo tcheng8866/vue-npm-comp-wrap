@@ -90,7 +90,7 @@ export default {
   font-size: 14px;
   font-family: inherit;
   background-color: inherit;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: inherit;
   line-height: 40px;
   margin: 10px 0;
   .input-group {
