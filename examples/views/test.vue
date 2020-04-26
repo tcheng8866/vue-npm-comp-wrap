@@ -4,43 +4,40 @@
       <!-- （tel实际上是一种text类型）手机端会唤醒数字键盘 -->
       <!-- （number 可以输入（-）、多个小数点、所以最好输入不控制、但提交时正则拦截、输入控制会有兼容性问题-->
       <w-input
-        :label="label"
-        v-model.trim="modelName"
-        :maxlength="maxlength"
-        :type="type"
-        :placeholder="placeholder"
-        :disabled="disabled"
-      ></w-input>
-<!--      <w-input
-        :label="label"
+        :label="labelTel"
         v-model.trim="modelTel"
-        :maxlength="maxlength"
-        :type="type"
-        :placeholder="placeholder"
         :disabled="disabled"
-      ></w-input> -->
+        maxlength="11"
+        type="number"
+        placeholder="测试Number length"
+      ></w-input>
+      <!-- type="tel": 用的是input自带的属性；:type="telModel" 这种是写在data传入组件 -->
+      <w-input
+        :label="labelNumber"
+        v-model.trim="modelNumber"
+        :disabled="disabled"
+        :maxlength="maxlength"   
+        type="number"
+        placeholder="测试Number length"
+      ></w-input>
       <w-button :disabled="disabled" @click="bindClick()">测试</w-button>
     </div>
   </div>
 </template>
 
 <script>
-// import wInput from "../../packages/input/input.vue";
-// import wButton from "../../packages/button/button.vue";
 export default {
   name: "",
   mixins: [],
-  // components: { wInput, wButton },
   props: {},
   data() {
     return {
-      label: "电话号码：",
-      modelName: '两行测一下',
+      labelTel: "电话",
       modelTel: "18702906728",
-      maxlength: 1000,
-      type: "tel",
-      placeholder: "",
-      disabled: false
+      labelNumber: '测试数字',
+      modelNumber: "18702906728",
+      disabled: false,
+      maxlength: '11'
     };
   },
   computed: {},
@@ -50,8 +47,9 @@ export default {
   destroyed() {},
   methods: {
     bindClick() {
-      // 不存在时机问题： 默认可以点击、点击一次后禁止点击
       console.log(this.modelTel);
+      console.log(this.modelNumber);
+      // 不存在时机问题： 默认可以点击、点击一次后禁止点击
       this.disabled = true;
     }
   }

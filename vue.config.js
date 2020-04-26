@@ -31,5 +31,17 @@ module.exports = {
         // 修改它的选项...
         return options
       })
+  },
+  devServer: {
+    // 环境配置
+    host: 'localhost',
+    port: 9999,
+    https: true,  //是否以https启动
+    open: true, //配置自动启动浏览器(按照devServer的配置host:port)
+    proxy: {}
+  },
+  pluginOptions: {
+    // 第三方插件配置
+    // ...
   }
 }
