@@ -1,6 +1,6 @@
 {
 	"name": "comp-wrap",
-	"version": "1.0.8",
+	"version": "1.0.9",
 	"description": "comp-wrap",
 	"main": "lib/comp-wrap.umd.min.js",
 	"private": false,
