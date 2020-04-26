@@ -9,8 +9,6 @@
 
 - import compWrap from 'comp-wrap'
 
-- import 'comp-wrap/lib/comp-wrap.css'
-
 - Vue.use(compWrap)
 
 
@@ -20,6 +18,7 @@
 -  考虑到label和input经常一起出现，且input标签在text="number"时存在maxlength失效的Bug，有必要封装到一个组件并解决此Bug
 
 - 本着简单、且兼容input标签的原则，设置组件属性时尽可能使用和input标签同名的属性。
+
 - 例如： maxleng="maxleng"，此时是input标签的属性；但 :maxleng="maxleng" 就是传入组件props的属性，同样type="text"和：type="type" 也是兼容的。
 
 - 示例：<w-input :label="电话号码" v-model.trim="idCard" type="number" maxlength="11" :disabled="disabled"></w-input>
