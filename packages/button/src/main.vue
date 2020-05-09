@@ -1,7 +1,6 @@
 <template>
   <button
-    type="button"
-    :class="[disabled ? disabledClass : '']"
+    :class="[disabled ? disabled : '']"
     @click="bindClick()"
   >
     <slot></slot>
@@ -18,9 +17,7 @@ export default {
     }
   },
   data() {
-    return {
-      disabledClass: "disabled"
-    };
+    return {};
   },
   methods: {
     bindClick() {

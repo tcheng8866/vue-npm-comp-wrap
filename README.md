@@ -30,6 +30,11 @@
 
 - 示例：<w-button :disabled="disabled" @click="bindClick()">测试</w-button>
 
+##  countDown
+-  倒计时组件：封装要点：1. 10s倒计时从显示从10开始不是9；2.props传入的countDown和组件里time的赋值和显示关系
+
+- 示例：<w-count-down :countDown="30" @click="handClick()"></w-count-down>
+
 ### 在线预览：
 ### [vant-prj -- vue移动端项目](https://tcheng8866.github.io/vant-prj/dist/index.html#/)
 ### github地址：

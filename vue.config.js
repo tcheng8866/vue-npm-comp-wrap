@@ -38,7 +38,7 @@ module.exports = {
     port: 9999,
     https: true,  //是否以https启动
     open: true, //配置自动启动浏览器(按照devServer的配置host:port)
-    proxy: {}
+    // proxy: {}
   },
   pluginOptions: {
     // 第三方插件配置

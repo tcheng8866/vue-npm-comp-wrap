@@ -1,7 +1,8 @@
 import wInput from './input/index'
 import wButton from './button/index'
+import wCountDown from './countDown/index'
 
-const components = [wInput, wButton]; // 将上述组件保存到一个数组
+const components = [wInput, wButton, wCountDown]; // 将上述组件保存到一个数组
 
 // 定义install方法，它将作为export暴露的对象的方法被Vue.use调用
 const install = function(Vue){

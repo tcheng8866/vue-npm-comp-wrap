@@ -16,11 +16,13 @@
         :label="labelNumber"
         v-model.trim="modelNumber"
         :disabled="disabled"
-        :maxlength="maxlength"   
+        :maxlength="maxlength"
         type="number"
         placeholder="测试Number length"
       ></w-input>
       <w-button :disabled="disabled" @click="bindClick()">测试</w-button>
+      <!-- 倒计时 -->
+      <w-count-down :countDown="countDown" @click="handClick()"></w-count-down>
     </div>
   </div>
 </template>
@@ -37,7 +39,9 @@ export default {
       labelNumber: '测试数字',
       modelNumber: "18702906728",
       disabled: false,
-      maxlength: '11'
+      maxlength: '11',
+
+      countDown: '5'
     };
   },
   computed: {},
@@ -51,6 +55,9 @@ export default {
       console.log(this.modelNumber);
       // 不存在时机问题： 默认可以点击、点击一次后禁止点击
       this.disabled = true;
+    },
+    handClick() {
+      console.log("倒计时！")
     }
   }
 };
