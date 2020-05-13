@@ -6,7 +6,6 @@
       <w-input
         :label="labelTel"
         v-model.trim="modelTel"
-        :disabled="disabled"
         maxlength="11"
         type="number"
         placeholder="测试Number length"

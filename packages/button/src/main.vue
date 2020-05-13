@@ -1,6 +1,6 @@
 <template>
   <button
-    :class="[disabled ? disabled : '']"
+    :class="[disabled ? 'disabled' : '']"
     @click="bindClick()"
   >
     <slot></slot>
