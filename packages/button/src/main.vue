@@ -31,14 +31,12 @@ export default {
 <style lang="less" scoped>
 button {
   width: 100%;
-  height: 40px;
-  padding: 0;
-  margin-top: 20px;  // button默认是inline-block；竖直方向margin不会重叠
+  padding: 10px 0;
   font-size: 16px;
   font-family: inherit;  //  initial（默认）和 inherit（继承） unset(不设置)
   text-align: center;
   color: #ffffff;
-  background-image: linear-gradient(97deg, #32aef4 0%, #0084cf 81%);
+  background-image: linear-gradient(97deg, #32aef4 0%, #0084cf 80%);
   border: none;
   border-radius: 3px;
 }

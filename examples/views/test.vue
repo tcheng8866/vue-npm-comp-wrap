@@ -39,7 +39,6 @@ export default {
       modelNumber: "18702906728",
       disabled: false,
       maxlength: '11',
-
       countDown: '5'
     };
   },
@@ -77,6 +76,6 @@ export default {
   }
 }
 .labelClass {
-  fontsize: 30px;
+  font-size: 30px;
 }
 </style>
